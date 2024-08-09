@@ -22,7 +22,7 @@ body {
 
 #wrapper {
 	background-color: #fff;
-	width: 350px;
+	width: 320px;
 	/* max-width: 40%; */
 	margin: 0 auto;
 	margin-top: 4em;
@@ -49,6 +49,7 @@ body {
 	color: hsl(214, 17%, 51%);
 	font-weight: 500;
 	font-size: 14px;
+	line-height: 1.5em;
 }
 .contact {
 	margin-top: 1.5em;
@@ -80,6 +81,10 @@ body {
 	background-color: hsl(210, 46%, 95%);
 	padding: 0.3em 0.5em;
 	border-radius: 50px;
+	cursor: pointer;
+}
+.btn--share:hover {
+	background-color: hsl(217, 19%, 35%);
 }
 
 .share {
@@ -91,13 +96,88 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
+.share-text {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 13px;
+	color: hsl(210, 46%, 95%);
+	font-weight: 500;
+}
+.socials {
+	width: 60%;
+	display: flex;
+}
+.socials img {
+	margin-right: 12px;
+}
+.share .btn--share {
+	padding: 0.4em 0.32em;
+}
 
+/* STATE STYLING */
+.hidden {
+	display: none;
+}
+.contact-desktop {
+	display: none;
+}
 /* ATTRIBUTION STYLING */
-
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERY FOR SCREEN BIGGER THAN 600PX */
+@media (min-width: 800px) {
+	#wrapper {
+		display: flex;
+		width: 600px;
+		position: relative;
+	}
+	.image {
+		width: 60%;
+		display: flex;
+	}
+
+	.hero-image {
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.text {
+		width: 100%;
+	}
+	.body-text {
+		font-size: 0.7em;
+	}
+
+	.profile-image {
+		width: 10%;
+	}
+	.profile-name {
+		font-size: 0.8em;
+	}
+	.date {
+		font-size: 0.7em;
+	}
+	.share {
+		position: absolute;
+		top: 110px;
+		left: 450px;
+		border-radius: 10px;
+		width: 250px;
+	}
+	.share-text {
+		font-size: 10px;
+		margin-right: 1em;
+	}
+	.contact-desktop {
+		margin-top: 1.5em;
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

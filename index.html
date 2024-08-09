@@ -19,6 +19,8 @@
 			rel="stylesheet"
 		/>
 
+		<script defer src="./assets/js/script.js"></script>
+
 		<title>Adefenwa | Article preview component</title>
 	</head>
 	<body>
@@ -59,9 +61,27 @@
 							</button>
 						</div>
 					</div>
+					<div class="contact-desktop hidden">
+						<div class="profile-image">
+							<img
+								src="./images/avatar-michelle.jpg"
+								alt="A fair lady with a blonde hair wearing a brown suit on top of a white shirt"
+								class="p__img"
+							/>
+						</div>
+						<div class="profile-details">
+							<h5 class="profile-name">Michelle Appleton</h5>
+							<p class="date">28 Jun 2020</p>
+						</div>
+						<div class="share-icon">
+							<button class="btn--share">
+								<img src="./images/icon-share.svg" alt="right curved arrow" />
+							</button>
+						</div>
+					</div>
 				</div>
 			</section>
-			<section class="share">
+			<section class="share hidden">
 				<h5 class="share-text">Share</h5>
 				<div class="socials">
 					<img
@@ -81,7 +101,7 @@
 					/>
 				</div>
 				<img
-					class="btn--share"
+					class="btn--share pop-up-btn"
 					src="./images/icon-share.svg"
 					alt="right curved arrow"
 				/>
